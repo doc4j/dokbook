@@ -1,0 +1,145 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: $body-color;
+  font-size: 0.925rem;
+}
+
+@media (min-width: 992px) {
+  .document-body {
+    max-width: 60rem;
+    width: calc(100vw - 520px);
+  }
+}
+
+.document-body {
+  margin: 0 auto;
+  word-break: break-word;
+}
+
+.document-body h1 {
+  font-size: 2em;
+}
+
+.document-header {
+  margin-bottom: 32px;
+}
+
+.document-section {
+  border-bottom: 1px solid #d8dee9;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.quote {
+  background-color: #7296b9;
+  border-left: 16px solid #5e81ac;
+  border-radius: 6px;
+  color: #fff;
+  padding: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.8em;
+  margin-bottom: 32px;
+}
+
+.document-list {
+  background: #f8f9fb;
+  border-radius: 12px;
+  line-height: 28px;
+  padding: 2.5rem;
+  margin: 3rem 0;
+}
+
+.document-list li {
+  list-style: none;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.document-list li:before {
+  background-color: #d8dee9;
+  border-radius: 100%;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-left: -12px;
+  margin-right: 12px;
+}
+
+.document-body kbd {
+  background-color: #f6f6fa;
+  border-radius: 0;
+  color: #db1a8b;
+  font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 2px 4px;
+  font-size: 0.925rem;
+  word-break: break-word;
+}
+
+.document-code {
+  margin-bottom: 24px;
+}
+
+.document-info,
+.document-tip,
+.document-note {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 30px 0 rgb(89 83 240 / 20%);
+  font-size: 1em;
+  line-height: 1.7em;
+  margin: 50px 0 !important;
+  padding: 2rem;
+  position: relative;
+}
+
+.document-tip-icon,
+.document-info-icon,
+.document-note-icon {
+  border-radius: 100%;
+  display: block;
+  left: 2rem;
+  padding: 0.6rem 0;
+  width: 48px;
+  height: 48px;
+  margin: 0px auto;
+  position: absolute;
+  top: -1.7rem;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+}
+
+.document-tip-icon {
+  background-color: #ebcb8b;
+}
+
+.document-info-icon {
+  background-color: #7296b9;
+}
+
+.document-note-icon {
+  background-color: #176fc7;
+}
+
+.document-figure {
+  align-content: center;
+  text-align: center;
+}
+
+.document-figure img {
+  max-width: 50rem;
+}
+
+.document-anchor {
+  color: lighten($color: $body-color, $amount: 50%);
+}
+
+.document-anchor:hover {
+  color: lighten($color: $body-color, $amount: 15%);
+}
